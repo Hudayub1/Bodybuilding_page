@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(4, 180, 250);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border: solid;
+}
+
+button {
+    width: 30%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#content {
+    height: 45rem;
+    width: 70%;
+    margin-top: 4rem;
+    margin-left: 15%;
+    border: solid white;
+    background-color: skyblue;
+}
+
