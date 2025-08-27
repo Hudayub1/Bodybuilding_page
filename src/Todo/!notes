@@ -1,0 +1,9 @@
+Responsible for creating/managing a single todo item.
+
+Properties: title, description, dueDate, priority, notes, checklist, completed.
+
+Methods (logic only, no DOM):
+
+markComplete / toggleComplete
+
+edit properties (title, dueDate, etc.)

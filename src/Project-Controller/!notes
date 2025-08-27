@@ -1,0 +1,13 @@
+Acts as a central hub.
+
+Properties: projects[], defaultProject.
+
+Methods:
+
+createProject
+
+deleteProject
+
+switchActiveProject
+
+getActiveTodos

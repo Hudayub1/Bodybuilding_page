@@ -1,0 +1,46 @@
+[UI Module] <---- events (user clicks, input) ---->
+    |
+    v
+[Project Manager] ----> [Project Module] ----> [Todo Module]
+    |
+    v
+[Storage Module] (for persistence)
+
+
+
+
+
+<!-- User Action (e.g., add todo) triggers UI event.
+
+UI calls Project Manager, which delegates to Project and Todo modules.
+
+Project/Todo return updated data → Project Manager updates state.
+
+Project Manager passes updated data back to UI for rendering.
+
+Storage syncs state so data persists. -->
+
+
+
+
+
+
+                ┌─────────────────┐
+                │   UI Module     │
+                │ (DOM handling)  │
+                └───────▲─────────┘
+                        │
+              user input│
+                        │ updated state
+                        │
+                ┌───────┴─────────┐
+                │ Project Manager │
+                │  (Controller)   │
+                └───────┬─────────┘
+         ┌──────────────┼───────────────┐
+         │              │               │
+ ┌───────▼──────┐ ┌─────▼────────┐ ┌────▼───────────┐
+ │ Project      │ │ Todo          │ │ Storage       │
+ │ (list of     │ │ (task object) │ │ (save/load)   │
+ │ todos)       │ │               │ │               │
+ └──────────────┘ └───────────────┘ └───────────────┘

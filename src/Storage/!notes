@@ -1,0 +1,7 @@
+Handles saving and loading data (e.g., LocalStorage, IndexedDB, or API in future).
+
+Methods:
+
+saveProjects
+
+loadProjects

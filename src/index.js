@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import './styles.css';
-import {renderAbout} from './tabs/about'
-import {renderHome} from './tabs/home'
-import {renderPrograms} from './tabs/program'
+import {renderAbout} from './Todo/Todo'
+import {renderHome} from './Todo/Read-todo'
+import {renderPrograms} from './Todo/Update-todo'
 
 
 document.addEventListener('DOMContentLoaded', () => {

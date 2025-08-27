@@ -1,0 +1,13 @@
+Groups a list of todos together.
+
+Properties: name, todos[].
+
+
+
+Methods:
+
+addTodo
+
+removeTodo
+
+getTodos

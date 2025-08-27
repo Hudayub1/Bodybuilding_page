@@ -1,0 +1,6 @@
+Displays projects and todos.
+
+Handles event listeners.
+
+Delegates logic to controller, 
+never manipulates data directly.
