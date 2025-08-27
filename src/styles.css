@@ -1,26 +1,37 @@
 body {
     background-color: rgb(4, 180, 250);
+    display: flex;
+}
+
+header {
+    border: solid;
+    width: 15rem;
+    height: 50rem;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-evenly;
     gap: 2rem;
     border: solid;
+    width: 12rem;
 }
 
 button {
-    width: 30%;
+    width: 70%;
     font-size: 1.2em;
     font-weight: bold;
+
 }
 
 #content {
     height: 45rem;
-    width: 70%;
-    margin-top: 4rem;
-    margin-left: 15%;
+    width: 45rem;
+    
+    margin-left: 30%;
     border: solid white;
     background-color: skyblue;
+    display: inline-block;
 }
 

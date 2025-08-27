@@ -1,10 +1,19 @@
-import { updateTodo } from "./todo.js";
+export class Project {
+  constructor(name) {
+    this.id = crypto.randomUUID();
+    this.name = name;
+    this.todos = [];
+  }
 
-const projects = []
+  addTodo(todo) {
+    this.todos.push(todo);
+  }
 
+  removeTodo(todoId) {
+    this.todos = this.todos.filter(t => t.id !== todoId);
+  }
 
-function editTodoInProject(project, todoId, updates) {
-  const todo = project.todos.find(t => t.id === todoId);
-  if (!todo) return null;        // not found: caller can handle this
-  return updateTodo(todo, updates);
+  getTodos(){
+    return this.todos
+  }
 }
