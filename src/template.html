@@ -7,14 +7,36 @@
 </head>
 <body>
     <header>
-        <nav>
-            <button class="btn home-js">Home</button>
-            <button class="btn about-js">About</button>
-            <button class="btn programs-js">Programs</button>
-        </nav>
-    </header>
-    <div id="projects">
-        
-    </div>
+    <h1>Project Manager</h1>
+  </header>
+
+  <main>
+    <!-- Project Section -->
+    <section id="project-section">
+      <h2>Projects</h2>
+      <form id="project-form">
+        <input type="text" id="project-name" placeholder="New project name" required>
+        <button type="submit">Add Project</button>
+      </form>
+      <ul id="project-list">
+        <li>Game</li>
+        <li>Beach</li>
+      </ul>
+    </section>
+
+    <!-- Task Section -->
+    <section id="task-section">
+      <h2>Tasks</h2>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task title" required>
+        <input type="text" id="task-desc" placeholder="Task description">
+        <input type="date" id="task-due">
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list">
+        <li>Game</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
